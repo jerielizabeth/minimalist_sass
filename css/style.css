@@ -1,38 +1,107 @@
-/*== Generic Styles ==*/
-/* line 4, ../sass/_generic.scss */
+/* Base Settings */
+/* line 4, ../sass/_base.scss */
 body {
-  font: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
   color: #444444;
   background: #fffff8;
   margin: 0;
 }
 
-/* line 11, ../sass/_generic.scss */
+/* line 11, ../sass/_base.scss */
 p, span, ul, ol, dl {
   font-size: 1em;
   line-height: 1.6em;
 }
 
-/* line 15, ../sass/_generic.scss */
+/* line 15, ../sass/_base.scss */
 abbr, acronym {
   border: none;
   font-style: normal;
 }
 
-/* line 19, ../sass/_generic.scss */
+/* line 19, ../sass/_base.scss */
 img a {
   border: none;
 }
 
-/* line 22, ../sass/_generic.scss */
+/* line 22, ../sass/_base.scss */
 .clear {
   clear: both;
 }
 
-/* line 25, ../sass/_generic.scss */
+/* line 25, ../sass/_base.scss */
 blockquote {
   font-style: italic;
+}
+
+/* Structure */
+/* line 30, ../sass/_base.scss */
+#wrap {
+  width: 744px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 35, ../sass/_base.scss */
+header {
+  margin: .5em 0 0;
+  padding: 1em 0 0;
+}
+
+/* line 39, ../sass/_base.scss */
+#site-title {
+  padding-bottom: 1em;
+}
+
+/* line 42, ../sass/_base.scss */
+#content {
+  clear: both;
+  margin: 3em 0 2em 0;
+}
+
+/* line 46, ../sass/_base.scss */
+#intro {
+  clear: both;
+  margin: 3em 0 0;
+}
+
+/* line 51, ../sass/_base.scss */
+#featured-item {
+  clear: both;
+  margin: 1.5em 0 1em;
+}
+
+/* line 55, ../sass/_base.scss */
+#featured-collection {
+  clear: both;
+  margin: 1.5em 0 1em;
+}
+
+/* line 59, ../sass/_base.scss */
+#featured-exhibit {
+  clear: both;
+  margin: 1.5em 0 1em;
+}
+
+/* line 63, ../sass/_base.scss */
+#recent-items {
+  clear: both;
+  overflow: hidden;
+  margin: 1.5em 0;
+}
+
+/* line 68, ../sass/_base.scss */
+#tagcloud {
+  margin-top: 2em;
+}
+
+/* line 71, ../sass/_base.scss */
+footer {
+  clear: both;
+  padding: 1em .5em;
+  margin: 3em 0 1em;
+  background-color: #dddddd;
 }
 
 /* Headings */
@@ -51,7 +120,7 @@ h1,
   color: #660066;
   text-transform: uppercase;
   letter-spacing: .2em;
-  font-size: 42px;
+  font-size: 39px;
   line-height: 1em;
 }
 
@@ -91,5 +160,181 @@ h6 {
   font-size: italic;
 }
 
-/* Links 
-@import "links";*/
+/* Links */
+/* line 4, ../sass/_links.scss */
+a:link,
+a:visited {
+  color: #660066;
+}
+
+/* line 7, ../sass/_links.scss */
+a:hover {
+  color: #92278f;
+}
+
+/* line 10, ../sass/_links.scss */
+a:active {
+  color: magenta;
+}
+
+/* line 18, ../sass/_links.scss */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+#site-title a {
+  text-decoration: none;
+}
+
+/* line 22, ../sass/_links.scss */
+h4 a {
+  padding: .25em 0;
+}
+
+/* Tables */
+/* Forms */
+/* line 4, ../sass/_tablesandforms.scss */
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+/* line 8, ../sass/_tablesandforms.scss */
+legend {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin: 1em 0 0;
+}
+
+/* line 13, ../sass/_tablesandforms.scss */
+input.textinput {
+  margin-bottom: 1em;
+}
+
+/* line 16, ../sass/_tablesandforms.scss */
+label {
+  display: block;
+}
+
+/* line 20, ../sass/_tablesandforms.scss */
+#search-container {
+  float: right;
+  font-size: .9em;
+  padding: 1em 0 0 1em;
+  margin: 0;
+}
+/* line 26, ../sass/_tablesandforms.scss */
+#search-container input {
+  margin: 0 0 0 .5em;
+  padding: 0;
+}
+/* line 30, ../sass/_tablesandforms.scss */
+#search-container a {
+  float: right;
+  font-size: 1em;
+  padding: 1em 0em;
+}
+/* line 35, ../sass/_tablesandforms.scss */
+#search-container h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  margin: 0;
+}
+
+/* line 43, ../sass/_tablesandforms.scss */
+#content fieldset {
+  display: block;
+  clear: both;
+}
+/* line 47, ../sass/_tablesandforms.scss */
+#content .inputs {
+  overflow: hidden;
+  zoom: 1;
+}
+/* line 52, ../sass/_tablesandforms.scss */
+#content .radioinputs label {
+  display: block;
+  float: left;
+  width: 48%;
+  clear: none;
+}
+/* line 60, ../sass/_tablesandforms.scss */
+#content .search-entry select {
+  margin-bottom: .5em;
+}
+/* line 64, ../sass/_tablesandforms.scss */
+#content #submit_search {
+  margin: .5em 0 0 458px;
+}
+
+/* line 69, ../sass/_tablesandforms.scss */
+#advanced-search-form .field {
+  border-bottom: 1px solid #dddddd;
+  padding: 0.75em 0;
+  overflow: hidden;
+  width: 100%;
+}
+/* line 75, ../sass/_tablesandforms.scss */
+#advanced-search-form .field label {
+  float: left;
+  width: 25%;
+  font-weight: normal;
+  clear: left;
+}
+/* line 82, ../sass/_tablesandforms.scss */
+#advanced-search-form .field .label {
+  float: left;
+  width: 25%;
+  font-weight: normal;
+  clear: left;
+}
+/* line 89, ../sass/_tablesandforms.scss */
+#advanced-search-form .field .textinput, #advanced-search-form .field select {
+  float: right;
+  width: 85%;
+  background: white;
+}
+/* line 94, ../sass/_tablesandforms.scss */
+#advanced-search-form .field select {
+  width: 86%;
+}
+/* line 97, ../sass/_tablesandforms.scss */
+#advanced-search-form .field button {
+  float: right;
+  margin-right: .5em;
+}
+/* line 101, ../sass/_tablesandforms.scss */
+#advanced-search-form .field input {
+  width: 85%;
+  float: right;
+}
+/* line 105, ../sass/_tablesandforms.scss */
+#advanced-search-form .field input .submitinput {
+  margin-top: 1em;
+}
+/* line 110, ../sass/_tablesandforms.scss */
+#advanced-search-form #submit_search_advanced {
+  float: right;
+  width: 25%;
+  margin-top: .5em;
+}
+
+/* Tables */
+/* line 118, ../sass/_tablesandforms.scss */
+table {
+  width: 100%;
+}
+
+/* line 122, ../sass/_tablesandforms.scss */
+th,
+td {
+  border-bottom: 1px solid #dddddd;
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+/* line 127, ../sass/_tablesandforms.scss */
+th {
+  border-width: 3px;
+  text-align: left;
+}

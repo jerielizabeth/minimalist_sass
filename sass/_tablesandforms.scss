@@ -1,0 +1,130 @@
+@import "colors";
+
+/* Forms */
+fieldset {
+	border:0;
+	padding:0;
+	}
+	legend {
+		font-size:1.5em;
+		line-height:1em;
+		margin:1em 0 0 ;
+		}
+	input.textinput {
+		margin-bottom:1em;
+		}
+	label {
+		display:block;
+		}
+
+#search-container {
+	float:right;
+	font-size: .9em;
+	padding: 1em 0 0 1em;
+	margin:0;
+
+	input {
+		margin:0 0 0 .5em;
+		padding:0;
+		}
+	a {
+		float:right;
+		font-size: 1em;
+		padding: 1em 0em;
+		}
+	h3 {
+		text-transform:uppercase;
+		font-size:1em;
+		margin:0;
+		}		
+}		
+	
+#content {
+	fieldset {
+		display:block;
+		clear:both;
+		}
+	.inputs {
+		overflow:hidden;
+		zoom:1;
+		}
+	.radioinputs {
+		label {
+			display:block;
+			float:left;
+			width:48%;
+			clear:none;
+			}
+		}
+	.search-entry {
+		select {
+			margin-bottom:.5em;
+			}
+		}
+	#submit_search {
+		margin:.5em 0 0 458px;
+		}	
+	}
+#advanced-search-form {
+	.field {
+		border-bottom:1px solid $grey-light;
+		padding:0.75em 0;
+		overflow:hidden;
+		width:100%;
+		
+		label {
+			float:left;
+			width:25%;
+			font-weight:normal;
+			clear:left;
+			}
+
+		.label {
+			float:left;
+			width:25%;
+			font-weight:normal;
+			clear:left;
+			}
+
+		.textinput, select {
+			float:right;
+			width:85%;
+			background: $white;
+			}
+		select {
+			width: 86%;
+			}
+		button {
+			float:right;
+			margin-right:.5em;
+			}	
+		input {
+			width:85%;
+			float:right;
+
+			.submitinput {
+				margin-top:1em;
+				}
+			}
+		}
+	#submit_search_advanced {
+		float:right;
+		width:25%;
+		margin-top:.5em;
+	}
+}
+  
+/* Tables */
+table {
+	width:100%;
+	}
+th,
+td {
+	border-bottom:1px solid $grey-light;
+	margin:0;
+	padding:0.5em 0;
+	}
+th {
+	border-width:3px;
+	text-align:left;
+	}

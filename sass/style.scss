@@ -1,11 +1,16 @@
 @import "compass";
 
-/*== Generic Styles ==*/
-@import "generic";
+/* Base Settings */
+@import "base";
 
 /* Headings */
 @import "headers";
 
-/* Links 
-@import "links";*/
+/* Links */
+@import "links";
+
+/* Tables */
+@import "tablesandforms";
+
+
 
