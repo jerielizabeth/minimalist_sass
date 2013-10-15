@@ -1,0 +1,66 @@
+@import "colors";
+
+#top-nav {
+	margin:0;
+	width:100%;
+	/*overflow:hidden; */
+	border-top:1px solid $grey-light;
+
+	ul {
+		float:left;
+		margin:0;
+		padding:0 0 0 1px;
+		
+		position:relative;
+		display:inline-table;
+
+			&:after {
+				content:"";
+				clear:both;
+				display:block;
+			}
+			
+				
+			ul {
+				position:absolute;
+				top:100%;
+
+				
+				li {
+					float:none;
+					position:relative;
+
+				}
+
+				ul {
+					position: absolute;
+					left:100%;
+					top:0;
+				}
+			}
+
+
+		li {
+			float:left;
+			padding: .5em .5em .5em 1em;
+			display:block;
+			background: url('../images/nav-bg.gif');
+			background-position: left center;
+			background-repeat:no-repeat;	
+
+			&:hover > ul {
+				display: block;
+				position:absolute;
+				
+			}
+			a {
+				display: block; 
+
+					}
+
+			}
+		ul {
+			display:none;
+		}
+	}
+}
