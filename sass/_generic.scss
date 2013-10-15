@@ -1,0 +1,27 @@
+@import "colors";
+@import "typography";
+
+body {
+	font: $font-family-main;
+	font-size: $font-size-main;
+	color: $text-color-base;
+	background: $background-color;
+	margin:0;
+}
+p,span,ul,ol,dl {
+	font-size:1em;
+	line-height:1.6em;
+}
+abbr, acronym{
+	border:none;
+	font-style: normal;
+}
+img a {
+	border:none;
+}
+.clear {
+	clear:both;
+}
+blockquote{
+	font-style:italic;
+}

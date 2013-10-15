@@ -1,0 +1,95 @@
+/*== Generic Styles ==*/
+/* line 4, ../sass/_generic.scss */
+body {
+  font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #444444;
+  background: #fffff8;
+  margin: 0;
+}
+
+/* line 11, ../sass/_generic.scss */
+p, span, ul, ol, dl {
+  font-size: 1em;
+  line-height: 1.6em;
+}
+
+/* line 15, ../sass/_generic.scss */
+abbr, acronym {
+  border: none;
+  font-style: normal;
+}
+
+/* line 19, ../sass/_generic.scss */
+img a {
+  border: none;
+}
+
+/* line 22, ../sass/_generic.scss */
+.clear {
+  clear: both;
+}
+
+/* line 25, ../sass/_generic.scss */
+blockquote {
+  font-style: italic;
+}
+
+/* Headings */
+/* line 7, ../sass/_headers.scss */
+h1,
+h2,
+h3,
+#site-title {
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: normal;
+}
+
+/* line 13, ../sass/_headers.scss */
+h1,
+#site-title {
+  color: #660066;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 42px;
+  line-height: 1em;
+}
+
+/* line 20, ../sass/_headers.scss */
+h2 {
+  border-bottom: 1px solid #dddddd;
+  font-size: 2em;
+  line-height: 1em;
+  margin-bottom: .75em;
+}
+
+/* line 26, ../sass/_headers.scss */
+h3 {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+
+/* line 33, ../sass/_headers.scss */
+h4,
+h5,
+h6 {
+  font-style: 1.2em;
+  line-height: 1.25em;
+  margin: .75em 0 0;
+}
+
+/* line 39, ../sass/_headers.scss */
+h5,
+h6 {
+  color: #666666;
+  font-weight: normal;
+}
+
+/* line 43, ../sass/_headers.scss */
+h6 {
+  font-size: italic;
+}
+
+/* Links 
+@import "links";*/
