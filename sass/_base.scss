@@ -1,6 +1,9 @@
 @import "colors";
 @import "typography";
+@import "skeleton"; 
+@import "compass";
 
+/*Generic */
 body {
 	font-family: $font-family-main;
 	font-size: $font-size-main;
@@ -28,7 +31,7 @@ blockquote{
 
 /* Structure */
 #wrap {
-	width: 744px;
+	width: $base-width;	
 	margin: 0 auto;
 	position: relative;
 }
@@ -41,11 +44,13 @@ header {
 }
 #content {
 	clear:both;
-	margin:3em 0 2em 0;
+	margin: 4em 0 2em 0;
+	padding-top: 1em;
 	}
 #intro{
 	clear:both;
-	margin:3em 0 0;
+	margin:1em 0;
+	padding-bottom: 1em;
 	}
 
 #featured-item {
@@ -73,4 +78,294 @@ footer {
 	padding:1em .5em;
 	margin: 3em 0 1em;
 	background-color: $grey-light;
+	}
+
+/* Headings */
+h1,
+h2,
+h3,
+#site-title {
+	font-family: $font-family-title;
+	font-weight:normal;
+}
+
+h1,
+#site-title {
+	color:$purple-dark;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	font-size: $font-size-main *3;
+	line-height: 1em;
+}
+h2 {
+	border-bottom: 1px solid $grey-light;
+	font-size: 2em;
+	line-height: 1em;
+	margin-bottom: .75em;
+}
+h3 {
+	font-size: 1.5em;
+	line-height: 1em;
+	margin-bottom: 1em;
+}
+h4,
+h5,
+h6 {
+	font-style: 1.2em;
+	line-height: 1.25em;
+	margin: .75em 0 0;
+}
+h5,
+h6 {
+	color: $grey-medium;
+	font-weight: normal;
+}
+h6 {
+	font-size:italic;
+}
+/* Links */
+a:link,
+a:visited {
+	color: $purple-dark;
+	}
+a:hover {
+	color: $purple-main;
+	}
+a:active {
+	color: $purple-light;
+	}
+
+h1 a, 
+h2 a,
+h3 a,
+h4 a,
+#site-title a {
+	text-decoration:none;
+	}
+
+h4 a {
+	padding:.25em 0;
+	}
+
+footer {
+	a {
+		text-decoration: none;
+	}
+}
+/* Navigation */
+#top-nav {
+	margin:0;
+	width:100%;
+	padding:.5em 0;
+	border-top:1px solid $grey-light;
+
+	ul {
+		float:left;
+		margin:0;
+		padding:0 0 0 1px;
+		position:relative;
+		display:inline-table;
+
+			&:after {
+				content:"";
+				clear:both;
+				display:block;
+			}
+				
+			ul {
+				position:absolute;
+				top:100%;			
+				
+				li {
+					float:none;
+					position:relative;
+					background-color:shade($background-color, 5%);
+					background-image:none;
+					border-bottom:1px solid $grey-light;
+				}
+
+				ul {
+					position: absolute;
+					left:100%;
+					top:0;
+				}
+			}
+
+
+		li {
+			float:left;
+			padding: .5em 1.5em .5em 1em;
+			display:block;
+			background: url('../images/nav-bg.gif');
+			background-position: left center;
+			background-repeat:no-repeat;
+
+			&:hover > ul {
+				display: block;
+				position:absolute;
+				width: skeleton-column-width(4);
+			}
+			a {
+				display: block;
+				text-decoration: none;
+					}
+			}
+		ul {
+			display:none;
+		}
+	}
+}
+#bottom-nav {
+
+
+	.navigation {
+		padding:0;
+		margin:0 0 10px;
+		width:100%;
+		float:left;
+		a {
+		text-decoration: none;
+		}
+
+		li {
+			padding-right:10px;
+			text-decoration: none;
+			display:block;
+			float:left;
+
+
+
+			ul {
+				display:none;
+			}
+		}
+	}	
+}
+/* Forms */
+fieldset {
+	border:0;
+	padding:0;
+	}
+	legend {
+		font-size:1.5em;
+		line-height:1em;
+		margin:1em 0 0 ;
+		}
+	input.textinput {
+		margin-bottom:1em;
+		}
+	label {
+		display:block;
+		}
+
+#search-container {
+	float:right;
+	font-size: .9em;
+	padding: 1em 0 0 1em;
+	margin:0;
+
+	input {
+		margin:0 0 0 .5em;
+		padding:0;
+		}
+	a {
+		float:right;
+		font-size: 1em;
+		padding: 1em 0em;
+		}
+	h3 {
+		text-transform:uppercase;
+		font-size:1em;
+		margin:0;
+		}		
+}		
+	
+#content {
+	fieldset {
+		display:block;
+		clear:both;
+		}
+	.inputs {
+		overflow:hidden;
+		zoom:1;
+		}
+	.radioinputs {
+		label {
+			display:block;
+			float:left;
+			width:48%;
+			clear:none;
+			}
+		}
+	.search-entry {
+		select {
+			margin-bottom:.5em;
+			}
+		}
+	#submit_search {
+		margin:.5em 0 0 458px;
+		}	
+	}
+#advanced-search-form {
+	.field {
+		border-bottom:1px solid $grey-light;
+		padding:0.75em 0;
+		overflow:hidden;
+		width:100%;
+		
+		label {
+			float:left;
+			width:25%;
+			font-weight:normal;
+			clear:left;
+			}
+
+		.label {
+			float:left;
+			width:25%;
+			font-weight:normal;
+			clear:left;
+			}
+
+		.textinput, select {
+			float:right;
+			width:85%;
+			background: $white;
+			}
+		select {
+			width: 86%;
+			}
+		button {
+			float:right;
+			margin-top:.5em;
+			}	
+		input {
+			width:85%;
+			float:right;
+
+			.submitinput {
+				margin-top:1em;
+				}
+			}
+		}
+	#submit_search_advanced {
+		float:right;
+		width:25%;
+		margin-top:.5em;
+	}
+}
+  
+/* Tables */
+table {
+	width:100%;
+	}
+th,
+td {
+	border-bottom:1px solid $grey-light;
+	margin:0;
+	padding:0.5em 0;
+	}
+th {
+	border-width:3px;
+	text-align:left;
 	}

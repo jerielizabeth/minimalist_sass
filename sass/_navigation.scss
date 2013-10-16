@@ -1,9 +1,12 @@
 @import "colors";
+@import "skeleton";
+@import "compass";
 
 #top-nav {
 	margin:0;
 	width:100%;
 	/*overflow:hidden; */
+	padding:.5em 0;
 	border-top:1px solid $grey-light;
 
 	ul {
@@ -23,12 +26,15 @@
 				
 			ul {
 				position:absolute;
-				top:100%;
+				top:100%;			
 
 				
 				li {
 					float:none;
 					position:relative;
+					background-color:shade($background-color, 5%);
+					background-image:none;
+					border-bottom:1px solid $grey-light;
 
 				}
 
@@ -42,19 +48,21 @@
 
 		li {
 			float:left;
-			padding: .5em .5em .5em 1em;
+			padding: .5em 1.5em .5em 1em;
 			display:block;
 			background: url('../images/nav-bg.gif');
 			background-position: left center;
-			background-repeat:no-repeat;	
+			background-repeat:no-repeat;
 
 			&:hover > ul {
 				display: block;
 				position:absolute;
-				
+				width: skeleton-column-width(4);
+
+
 			}
 			a {
-				display: block; 
+				display: block;
 
 					}
 
