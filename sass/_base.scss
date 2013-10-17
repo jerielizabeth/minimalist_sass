@@ -277,18 +277,26 @@ footer {
 				&:hover {
 					color:$purple-main;
 				}
-			}
-			&:.active {
-			a {color:$purple-dark; font-weight: bold; padding: 5px .5em;}
 			}			
+		}
+		li.active {
+			a {color:$purple-dark; font-weight: bold; padding: 5px .5em;}
 		}
 	}
 }
 .pagination {
+	width:40%;
+	list-style-type:none;
+	margin-left:0;
 	
+	li {
+		display:block;
+		float:left;
+		
+	}
 }
 .sort-links {
-		width:60%;
+	width:60%;
 	}
 #bottom-nav {
 	.navigation {
