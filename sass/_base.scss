@@ -277,28 +277,19 @@ footer {
 				&:hover {
 					color:$purple-main;
 				}
-
 			}
-			
-		}
-		li.active {
+			&:.active {
 			a {color:$purple-dark; font-weight: bold; padding: 5px .5em;}
-		}
-	}
-	.sort-links {
-		width:60%;
-	}
-	.pagination {
-		float: left;
-		width: 40%;
-		list-style-type: none;
-
-		#page {
-			width:50px;
+			}			
 		}
 	}
 }
-
+.pagination {
+	
+}
+.sort-links {
+		width:60%;
+	}
 #bottom-nav {
 	.navigation {
 		padding:0;
