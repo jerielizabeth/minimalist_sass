@@ -286,7 +286,7 @@ footer {
 	}
 }
 .pagination {
-	width:70%;
+	width:65%;
 	float:left;
 	list-style-type:none;
 	margin:.5em 0;
@@ -304,7 +304,7 @@ footer {
 	}
 }
 #sort-links{
-	width:30%;
+	width:35%;
 	margin:.5em 0;
 	float:left;
 
@@ -321,10 +321,12 @@ footer {
 		margin:0;
 
 		li{
-			text-decoration: none;
+			padding:0 .75em 0 1em;
+			background:url('../images/nav-bg.gif');
+			background-position:left center;
+			background-repeat:no-repeat;
 			display:block;
 			float:left;
-			padding:0 5px;
 
 			a{text-decoration:none;}
 		}
