@@ -684,7 +684,7 @@ ul{
             border-top: solid 1px $background-color;
 
             li {
-                padding:.5em .5em;
+                padding:.5em 0 .5em .5em;
                 border-bottom: solid 1px $background-color;
                 background-color:lighten($grey-light, 5%);
             
@@ -808,10 +808,12 @@ ul{
     #exhibit-child-pages {
         width: 30%;
         float: left;
+        border-bottom: 1px solid $grey-super-light;
         li {
             display: block;
             float: right;
-            border-bottom:1px solid $grey-light;
+            padding-bottom:.5em;
+            border-bottom: none;
             font-size: $font-size-main * 1.1;
         }
 

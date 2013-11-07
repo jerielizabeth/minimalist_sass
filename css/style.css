@@ -1234,7 +1234,7 @@ ul tags li {
 }
 /* line 686, ../sass/style.scss */
 .exhibits.summary #exhibit-pages ul li {
-  padding: .5em .5em;
+  padding: .5em 0 .5em .5em;
   border-bottom: solid 1px #fffff8;
   background-color: #eaeaea;
 }
@@ -1360,155 +1360,157 @@ ul tags li {
 .exhibits.show #exhibit-child-pages {
   width: 30%;
   float: left;
+  border-bottom: 1px solid #eeeeee;
 }
-/* line 811, ../sass/style.scss */
+/* line 812, ../sass/style.scss */
 .exhibits.show #exhibit-child-pages li {
   display: block;
   float: right;
-  border-bottom: 1px solid #dddddd;
+  padding-bottom: .5em;
+  border-bottom: none;
   font-size: 15.4px;
 }
-/* line 820, ../sass/style.scss */
+/* line 822, ../sass/style.scss */
 .exhibits.show .exhibit-item {
   overflow: hidden;
 }
-/* line 822, ../sass/style.scss */
+/* line 824, ../sass/style.scss */
 .exhibits.show .exhibit-item a {
   text-decoration: none;
 }
-/* line 826, ../sass/style.scss */
+/* line 828, ../sass/style.scss */
 .exhibits.show a img {
   border: none;
 }
-/* line 829, ../sass/style.scss */
+/* line 831, ../sass/style.scss */
 .exhibits.show .gallery-thumbnails-text-bottom {
   clear: both;
 }
-/* line 832, ../sass/style.scss */
+/* line 834, ../sass/style.scss */
 .exhibits.show .gallery-thumbnails-text-bottom .primary .exhibit-item {
   margin-right: 9px;
 }
 
 /* !---------- Microformats ---------- */
-/* line 843, ../sass/style.scss */
+/* line 845, ../sass/style.scss */
 .hTagcloud ul {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
 }
-/* line 847, ../sass/style.scss */
+/* line 849, ../sass/style.scss */
 .hTagcloud ul li {
   display: inline;
 }
-/* line 851, ../sass/style.scss */
+/* line 853, ../sass/style.scss */
 .hTagcloud ul .popular,
 .hTagcloud ul .-popular {
   font-size: 120%;
 }
-/* line 853, ../sass/style.scss */
+/* line 855, ../sass/style.scss */
 .hTagcloud ul .popular a, .hTagcloud ul .popular a:visited,
 .hTagcloud ul .-popular a,
 .hTagcloud ul .-popular a:visited {
   color: #ccc;
 }
-/* line 856, ../sass/style.scss */
+/* line 858, ../sass/style.scss */
 .hTagcloud ul .popular a:hover,
 .hTagcloud ul .-popular a:hover {
   color: #4B0049;
 }
-/* line 860, ../sass/style.scss */
+/* line 862, ../sass/style.scss */
 .hTagcloud ul .v-popular {
   font-size: 140%;
 }
-/* line 862, ../sass/style.scss */
+/* line 864, ../sass/style.scss */
 .hTagcloud ul .v-popular a, .hTagcloud ul .v-popular a:visited {
   color: #ccc;
 }
-/* line 865, ../sass/style.scss */
+/* line 867, ../sass/style.scss */
 .hTagcloud ul .v-popular a:hover {
   color: #5B175A;
 }
-/* line 869, ../sass/style.scss */
+/* line 871, ../sass/style.scss */
 .hTagcloud ul .vv-popular {
   font-size: 180%;
 }
-/* line 871, ../sass/style.scss */
+/* line 873, ../sass/style.scss */
 .hTagcloud ul .vv-popular a, .hTagcloud ul .vv-popular a:visited {
   color: #bebebe;
 }
-/* line 874, ../sass/style.scss */
+/* line 876, ../sass/style.scss */
 .hTagcloud ul .vv-popular a:hover {
   color: #6C2E6A;
 }
-/* line 878, ../sass/style.scss */
+/* line 880, ../sass/style.scss */
 .hTagcloud ul .vvv-popular {
   font-size: 220%;
 }
-/* line 880, ../sass/style.scss */
+/* line 882, ../sass/style.scss */
 .hTagcloud ul .vvv-popular a, .hTagcloud ul .vvv-popular a:visited {
   color: #b1b1b1;
 }
-/* line 883, ../sass/style.scss */
+/* line 885, ../sass/style.scss */
 .hTagcloud ul .vvv-popular a:hover {
   color: #7C467B;
 }
-/* line 887, ../sass/style.scss */
+/* line 889, ../sass/style.scss */
 .hTagcloud ul .vvvv-popular {
   font-size: 260%;
 }
-/* line 889, ../sass/style.scss */
+/* line 891, ../sass/style.scss */
 .hTagcloud ul .vvvv-popular a, .hTagcloud ul .vvvv-popular a:visited {
   color: #a3a3a3;
 }
-/* line 892, ../sass/style.scss */
+/* line 894, ../sass/style.scss */
 .hTagcloud ul .vvvv-popular a:hover {
   color: #8C5D8B;
 }
-/* line 896, ../sass/style.scss */
+/* line 898, ../sass/style.scss */
 .hTagcloud ul .vvvvv-popular {
   font-size: 300%;
 }
-/* line 898, ../sass/style.scss */
+/* line 900, ../sass/style.scss */
 .hTagcloud ul .vvvvv-popular a, .hTagcloud ul .vvvvv-popular a:visited {
   color: #959595;
 }
-/* line 901, ../sass/style.scss */
+/* line 903, ../sass/style.scss */
 .hTagcloud ul .vvvvv-popular a:hover {
   color: #9D749C;
 }
-/* line 905, ../sass/style.scss */
+/* line 907, ../sass/style.scss */
 .hTagcloud ul .vvvvvv-popular {
   font-size: 320%;
 }
-/* line 907, ../sass/style.scss */
+/* line 909, ../sass/style.scss */
 .hTagcloud ul .vvvvvv-popular a, .hTagcloud ul .vvvvvv-popular a:visited {
   color: #888;
 }
-/* line 910, ../sass/style.scss */
+/* line 912, ../sass/style.scss */
 .hTagcloud ul .vvvvvv-popular a:hover {
   color: #AD8BAC;
 }
-/* line 914, ../sass/style.scss */
+/* line 916, ../sass/style.scss */
 .hTagcloud ul .vvvvvvv-popular {
   font-size: 340%;
 }
-/* line 916, ../sass/style.scss */
+/* line 918, ../sass/style.scss */
 .hTagcloud ul .vvvvvvv-popular a, .hTagcloud ul .vvvvvvv-popular a:visited {
   color: #7a7a7a;
 }
-/* line 919, ../sass/style.scss */
+/* line 921, ../sass/style.scss */
 .hTagcloud ul .vvvvvvv-popular a:hover {
   color: #BEA2BD;
 }
-/* line 923, ../sass/style.scss */
+/* line 925, ../sass/style.scss */
 .hTagcloud ul .vvvvvvvv-popular {
   font-size: 360%;
 }
-/* line 925, ../sass/style.scss */
+/* line 927, ../sass/style.scss */
 .hTagcloud ul .vvvvvvvv-popular a, .hTagcloud ul .vvvvvvvv-popular a:visited {
   color: #6d6d6d;
 }
-/* line 928, ../sass/style.scss */
+/* line 930, ../sass/style.scss */
 .hTagcloud ul .vvvvvvvv-popular a:hover {
   color: #CEB9CD;
 }
